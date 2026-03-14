@@ -106,11 +106,26 @@
  	letter-spacing: 1.4px;
  	background-color: var(--red-color);
  	text-transform: uppercase;
+ 	transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
  }
 
  .button_blue {
  	background-color: var(--blue-color);
  	max-width: 130px;
+ }
+
+ .button:hover {
+ 	transform: translateY(-3px);
+ 	/* Легке підняття вгору */
+ 	box-shadow: 0 10px 20px rgba(66, 133, 244, 0.2);
+ 	/* М'яка тінь у колір кнопки */
+ 	filter: brightness(1.1);
+ 	/* Легке освітлення */
+ }
+
+ .button:active {
+ 	transform: translateY(-1px);
+ 	/* Ефект натискання */
  }
 
  .text-block {}
@@ -222,6 +237,31 @@
  	font-weight: 700;
  	line-height: normal;
  	letter-spacing: 1.4px;
+ }
+
+ .menu-header__link {
+ 	position: relative;
+ 	transition: color 0.3s ease;
+ }
+
+ .menu-header__link::after {
+ 	content: '';
+ 	position: absolute;
+ 	bottom: -4px;
+ 	left: 0;
+ 	width: 0;
+ 	height: 2px;
+ 	background-color: var(--blue-color);
+ 	/* Або --red-color для акценту */
+ 	transition: width 0.3s ease;
+ }
+
+ .menu-header__link:hover::after {
+ 	width: 100%;
+ }
+
+ .menu-header__link:hover {
+ 	color: var(--blue-color);
  }
 
  .container-header__button {
@@ -418,6 +458,15 @@
  .icon-play__body {
  	display: inline-flex;
  	align-items: center;
+ 	transition: transform 0.3s ease;
+ }
+
+ .icon-play__body:hover {
+ 	transform: scale(1.05);
+ }
+
+ .icon-play__body:hover img {
+ 	filter: drop-shadow(0 0 8px rgba(66, 133, 244, 0.4));
  }
 
  .icon-play__items {
@@ -983,7 +1032,7 @@
  @media (max-width: 479.98px) {
  	.footer__container {
  		flex-direction: column;
-		gap: 30px;
+ 		gap: 30px;
  	}
  }
 
