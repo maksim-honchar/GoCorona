@@ -1017,7 +1017,9 @@
  	gap: 57px;
  }
 
- .footer__item {}
+ .footer__item {
+	cursor: pointer;
+ }
 
  /* PC */
  @media (max-width: 1087px) {}
