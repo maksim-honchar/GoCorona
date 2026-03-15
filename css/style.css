@@ -21,8 +21,8 @@
  :root {
  	--font-family: "Rubik", "Segoe UI", sans-serif;
  	--second-family: "Raleway", "Segoe UI", sans-serif;
- 	--blue-color: #2D74E7;
- 	--red-color: #E63946;
+ 	--blue-color: #4285F4;
+ 	--red-color: #EC5863;
  	--smoke-color: #FAFBFD;
  }
 
@@ -599,7 +599,7 @@
  	width: 77px;
  	height: 77px;
  	border-radius: 30px;
- 	background-color: #EC5863;
+ 	background-color: var(--red-color);
  	z-index: 0;
  }
 
