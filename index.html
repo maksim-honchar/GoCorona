@@ -27,7 +27,7 @@
 					</div>
 					<div class="container-header__button">
 						<a href="#" class="button button_blue">DOWNLOAD</a>
-						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<button type="button" aria-label="Open menu" class="menu__icon icon-menu"><span></span></button>
 					</div>
 				</div>
 			</div>
@@ -186,8 +186,12 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<a href="#" class="footer__item"><img src="img/google-play.png" alt="google play"></a>
-				<a href="#" class="footer__item"><img src="img/apple-store.png" alt="apple store"></a>
+				<a href="#" class="footer__item" aria-label="Download on Google Play">
+					<img src="img/google-play.png" alt="google play">
+				</a>
+				<a href="#" class="footer__item" aria-label="Download on the App Store">
+					<img src="img/apple-store.png" alt="apple store">
+				</a>
 			</div>
 		</footer>
 	</div>
@@ -195,5 +199,6 @@
 	<script src="js/scrollreveal.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
+
 
 </html>
